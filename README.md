@@ -11,3 +11,4 @@ All code is released open-source under the *MIT License*. See the file `LICENSE`
 
 ## Projects
 - Model abundance patterns in the Milky Way as a combination of Galactocentric radius (or, better, actions) and irrelevant "housekeeping" data.
+- Exploit causal-structure beliefs to improve abundance measurements *post facto*.

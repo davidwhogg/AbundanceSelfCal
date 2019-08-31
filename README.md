@@ -1,5 +1,5 @@
 # AbundanceSelfCal
-applying self-calibration techniques to Galactic Archaeology
+applying self-calibration techniques to Galactic Archaeology projects
 
 ## Authors
 - **David W. Hogg** (NYU) (MPIA) (Flatiron)

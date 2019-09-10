@@ -3,7 +3,11 @@
 
 \documentclass[12pt, letterpaper]{article}
 
-\begin{document}
+%% math macros
+\newcommand{\teff}{{T_{\mathrm{eff}}}}
+\newcommand{\logg}{\log g}
+
+\begin{document}\sloppy\sloppypar\raggedbottom\frenchspacing
 
 \section*{Self-calibration of stellar element abundances}
 \noindent
@@ -32,6 +36,36 @@ temperatures of cosmic background pixels.
 The general idea is of very wide applicability...
 
 \section{Method}
-Imagine that we have a catalog of $N$ stars...
+Imagine that we have a catalog of $N$ stars.
+Each star $n$ has abundance measurements $y_n$.
+That is, for each star $n$, we have assembled a set of abundance ratio
+measurements into a data vector (or blob) $y_n$.
+We believe that the true abundance ratios $z_n$ of the star are
+closely related to, but not identical to, the measured abundance
+ratios $y_n$.
+We are going to use things we know about the causal relationships
+between the abundances and other data to infer the true abundances
+$z_n$ from the observed abundances $y_n$.
+
+For each star $n$ we have, in addition to the abundance measurements
+$y_n$ two other pieces of information.
+The first is the position $X_n$ of the star in phase space; that is,
+the position and velocity of the star in the Galaxy.
+The second is meta-data about the star.
+This can be thought of as a vector or blob $x_n$ of things we know
+about the star like its apparent magnitude $J_n$, temperature
+$\teff_n$, and surface gravity $\logg_n$.
+The meta-data $x_n$ also includes things about how the star was
+observed, like which spectrograph was used to observe it, which fiber
+within that spectrograph, what time of year, the airmass of the
+observation, and so on.
+
+The causal argument here is that the true abundances $z_n$ of the star
+will depend only on the phase-space position of the star $X_n$, but not at
+all on the meta-data $x_n$.
+That is...
+...
+
+In what sense are these assumptions wrong...?
 
 \end{document}

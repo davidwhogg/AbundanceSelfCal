@@ -3,15 +3,59 @@
 
 \documentclass[12pt, letterpaper]{article}
 
+%% text macros
+\newcommand{\project}[1]{\textsl{#1}}
+\newcommand{\acronym}[1]{{\small{#1}}}
+\newcommand{\apogee}{\project{\acronym{APOGEE}}}
+\newcommand{\sdssiv}{\project{\acronym{SDSS-IV}}}
+\newcommand{\dr}{\acronym{DR17}}
+
 %% math macros
 \newcommand{\teff}{{T_{\mathrm{eff}}}}
 \newcommand{\logg}{\log g}
 
 \begin{document}\sloppy\sloppypar\raggedbottom\frenchspacing
 
-\section*{Self-calibration of stellar element abundances}
+\section*{\raggedright
+  A data-driven causal model to recalibrate element-abundance measurements,
+  and to infer original birth abundances}
 \noindent
-\textbf{David W. Hogg} (NYU, MPIA, Flatiron), and \textbf{others}
+ACE, DWH, MKN, HWR, and others
+
+\paragraph{Abstract:}
+There are multiple large-scale spectroscopic surveys of stars in the
+Milky Way, currently comprising a global total of millions of stars with
+detailed element-abundance information.
+Many millions more are expected in the coming decade.
+Element-abundance measurements are of great scientific importance because
+surface abundances are expected to be (almost) invariant over a stellar
+lifetime and thus provide information about the relationships between
+the detailed history of star formation and the current configuration of the Galaxy.
+This scientific program is fraught, however:
+The element-abundance inferences are strongly model-dependent, being
+affected by the treatment of computationally challenging physics, such
+as non-eqilibrium and stochastic time-dependent effects.
+And the surface abundances can truly change over cosmic time, because
+of dredge-up, accretion, or other stellar-evolution effects.
+That is, for both model mis-specification and stellar-evolution
+reasons, the empirical element abundances in stellar parameter
+catalogs show strong variations with stellar evolutionary phase, even
+conditioning on position and velocity in the Galaxy.
+Here we present a self-calibration of the stellar element abundances for
+luminous red-giant stars in the \sdssiv--\apogee\ \dr\ Catalog [correct?].
+This self-calibration is based on a particular hierarchical model
+structure, or particular set of assumptions about the possible
+existence (and enforced non-existence) of causal relationships between
+birth abundances and properties of the stars, including position,
+velocity, surface gravity, and observing details (such as which instrument
+or spectroscopic fiber was employed).
+Up to some overall degeneracies, the model produces a re-calibrated
+set of element abundances for each star, which constitute an inference
+of what the element abundances \emph{would have been at the time of
+  the star's birth}.
+[Statements about performance and validation.]
+
+\end{document}
 
 \section{Introduction}
 We don't know how consistent our abundance measurements are as we scan

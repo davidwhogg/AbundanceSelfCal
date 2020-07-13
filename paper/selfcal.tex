@@ -1,5 +1,5 @@
 % This file is part of the AbundanceSelfCal project
-% Copyright 2019 the authors.
+% Copyright 2019, 2020 the authors.
 
 \documentclass[12pt, letterpaper]{article}
 
@@ -55,9 +55,8 @@ of what the element abundances \emph{would have been at the time of
   the star's birth}.
 [Statements about performance and validation.]
 
-\end{document}
-
 \section{Introduction}
+
 We don't know how consistent our abundance measurements are as we scan
 around the Milky Way...
 
@@ -72,6 +71,9 @@ Importantly, abundances are only expected or permitted to depend on certain
 things.
 That is, one can take a \emph{causal} approach to this problem...
 
+We can't distinguish between systematic errors and incorrectness of
+our assumptions. But we don't need to!
+
 Relatedly, the best calibration systems currently operating on astronomical
 data are self-calibrations.
 These systems make use of causal structure (and large data sets) to
@@ -80,6 +82,7 @@ temperatures of cosmic background pixels.
 The general idea is of very wide applicability...
 
 \section{Method}
+
 Imagine that we have a catalog of $N$ stars.
 Each star $n$ has abundance measurements $y_n$.
 That is, for each star $n$, we have assembled a set of abundance ratio
@@ -111,5 +114,8 @@ That is...
 ...
 
 In what sense are these assumptions wrong...?
+
+\paragraph{Acknowledgements:}
+Thanks to Jo Bovy (Toronto) for valuable input.
 
 \end{document}

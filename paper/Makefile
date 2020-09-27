@@ -1,6 +1,6 @@
 ALL: selfcal.pdf
 
-selfcal.pdf: selfcal.tex
-	pdflatex selfcal
-	pdflatex selfcal
-	pdflatex selfcal
+selfcal.pdf: gradient.tex
+	pdflatex gradient
+	pdflatex gradient
+	pdflatex gradient
